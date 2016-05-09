@@ -12,7 +12,7 @@
    TODO: - the set of interesting collision pairs
 
   -->
-<robot name=simple_humanoid>
+<robot name="simple_humanoid">
   <!-- groups -->
 
   <!-- To remove when the grippers will be added
@@ -55,36 +55,59 @@
   <!-- pre-defined states -->
   <!-- simple_humanoid pre-defined states -->
   <group_state name="half_sitting" group="all">
-    <joint name="waist" value="0 0 0 0 0 0 " />
-    <joint name="RLEG_HIP_R"     value="0" />
-    <joint name="RLEG_HIP_P"     value="0" />
-    <joint name="RLEG_HIP_Y"     value="0" />
-    <joint name="RLEG_KNEE"      value="0" />
-    <joint name="RLEG_ANKLE_P"   value="0" />
-    <joint name="RLEG_ANKLE_R"   value="0" />
-    <joint name="RARM_SHOULDER_P"value="0" />
-    <joint name="RARM_SHOULDER_R"value="0" />
-    <joint name="RARM_SHOULDER_Y"value="0" />
-    <joint name="RARM_ELBOW"     value="0" />
-    <joint name="RARM_WRIST_Y"   value="0" />
-    <joint name="RARM_WRIST_P"   value="0" />
-    <joint name="RARM_WRIST_R"   value="0" />
-    <joint name="LLEG_HIP_R"     value="0" />
-    <joint name="LLEG_HIP_P"     value="0" />
-    <joint name="LLEG_HIP_Y"     value="0" />
-    <joint name="LLEG_KNEE"      value="0" />
-    <joint name="LLEG_ANKLE_P"   value="0" />
-    <joint name="LLEG_ANKLE_R"   value="0" />
-    <joint name="LARM_SHOULDER_P"value="0" />
-    <joint name="LARM_SHOULDER_R"value="0" />
-    <joint name="LARM_SHOULDER_Y"value="0" />
-    <joint name="LARM_ELBOW"     value="0" />
-    <joint name="LARM_WRIST_Y"   value="0" />
-    <joint name="LARM_WRIST_P"   value="0" />
-    <joint name="LARM_WRIST_R"   value="0" />
-    <joint name="WAIST_P"        value="0" />
-    <joint name="WAIST_R"        value="0" />
-    <joint name="CHEST"          value="0" />
+    <!--  <joint name="waist" value="0 0 0 0 0 0 " /> -->
+    <joint name="RLEG_HIP_R"      value="0" />
+    <joint name="RLEG_HIP_P"      value="-0.453786" />
+    <joint name="RLEG_HIP_Y"      value="0" />
+    <joint name="RLEG_KNEE"       value="0.872665" />
+    <joint name="RLEG_ANKLE_P"    value="-0.418879" />
+    <joint name="RLEG_ANKLE_R"    value="0" />
 
+    <joint name="RARM_SHOULDER_P" value="-0.17453" />
+    <joint name="RARM_SHOULDER_R" value="0.261799" />
+    <joint name="RARM_SHOULDER_Y" value="0" />
+    <joint name="RARM_ELBOW"      value="-0.523599" />
+    <joint name="RARM_WRIST_Y"    value="0" />
+    <joint name="RARM_WRIST_P"    value="0" />
+    <joint name="RARM_WRIST_R"    value="0" />
+
+    <joint name="LLEG_HIP_R"      value="0" />
+    <joint name="LLEG_HIP_P"      value="-0.453786" />
+    <joint name="LLEG_HIP_Y"      value="0" />
+    <joint name="LLEG_KNEE"       value="0.872665" />
+    <joint name="LLEG_ANKLE_P"    value="-0.418879" />
+    <joint name="LLEG_ANKLE_R"    value="0" />
+
+    <joint name="LARM_SHOULDER_P" value="0.17453" />
+    <joint name="LARM_SHOULDER_R" value="0.261799" />
+    <joint name="LARM_SHOULDER_Y" value="0" />
+    <joint name="LARM_ELBOW"      value="-0.523599" />
+    <joint name="LARM_WRIST_Y"    value="0" />
+    <joint name="LARM_WRIST_P"    value="0" />
+    <joint name="LARM_WRIST_R"    value="0" />
+
+    <joint name="WAIST_P"         value="0" />
+    <joint name="WAIST_R"         value="0" />
+    <joint name="CHEST"           value="0" />
   </group_state>
+
+  <!--
+   Simple Humnaoid Specificities.
+     foot height = y axis
+     foot width  = x axis
+     foot depth  = z axis
+  -->
+  <specificities>
+    <feet>
+      <right>
+        <size height="0.14" width="0.25" depth="0.10" />
+        <anklePosition x="0.0" y="0.0" z="0.105" />
+      </right>
+      <left>
+        <size height="0.14" width="0.25" depth="0.10" />
+        <anklePosition x="0.0" y="0.0" z="0.105" />
+      </left>
+    </feet>
+  </specificities>
+
 </robot>
