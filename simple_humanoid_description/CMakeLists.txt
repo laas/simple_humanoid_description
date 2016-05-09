@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.6)
 include(cmake/base.cmake)
 include(cmake/ros.cmake)
 
-set(PROJECT_NAME simple-humanoid-description)
+set(PROJECT_NAME simple_humanoid_description)
 set(PROJECT_DESCRIPTION simple-humanoid URDF model and calibration data)
 set(PROJECT_URL "")
 
