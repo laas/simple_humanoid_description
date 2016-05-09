@@ -11,7 +11,7 @@ setup_project()
 
 # Install generated urdf files
 install(FILES
-  ${CMAKE_BINARY_DIR}/urdf/simple_humanoid.urdf
+  ${CMAKE_SOURCE_DIR}/urdf/simple_humanoid.urdf
   DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/urdf
 )
 
