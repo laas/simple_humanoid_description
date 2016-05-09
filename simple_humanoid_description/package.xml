@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+  <name>simple_humanoid_description</name>
+  <version>0.1.0</version>
+  <description>
+    simple-humanoid URDF model and calibration data
+  </description>
+  <maintainer email="antonio.el.khoury@laas.fr">Antonio El Khoury</maintainer>
+  <license>closed source</license>
+  <url>https://github.com/laas/simple_humanoid.git</url>
+</package>
