@@ -1,0 +1,26 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+\b simple_humanoid_description provides URDF, SRDF model information
+for the simple_humnaoid robot.
+
+\section urdf URDF
+
+The URDF file is only available for the default model. It contains the
+kinematic model of the robot.
+No meshes are present inside this repository
+
+\section srdf SRDF
+
+The SRDF file is only available for the default model. It contains the
+collision pairs which can be safely disabled and the default robot
+configuration called "half_sitting".
+It also contains adiditonnal information like the position of the ankle in the
+foot frame and the size of the foot.
+
+\section codeapi Code API
+
+This package does not provide API.
+
+*/
