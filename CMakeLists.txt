@@ -1,5 +1,28 @@
-cmake_minimum_required(VERSION 2.4.6)
-include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
-rosbuild_make_distribution(0.1.0)
+cmake_minimum_required(VERSION 2.6)
 
-ADD_SUBDIRECTORY(simple_humanoid_description)
+include(cmake/base.cmake)
+include(cmake/ros.cmake)
+
+set(PROJECT_NAME simple_humanoid_description)
+set(PROJECT_DESCRIPTION simple-humanoid URDF model and calibration data)
+set(PROJECT_URL "")
+
+setup_project()
+
+# Install generated urdf files
+install(FILES
+  ${CMAKE_SOURCE_DIR}/${PROJECT_NAME}/urdf/simple_humanoid.urdf
+  DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/urdf
+)
+
+# Install srdf files
+install(FILES
+  ${CMAKE_SOURCE_DIR}/${PROJECT_NAME}/srdf/simple_humanoid.srdf
+  DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/srdf
+)
+
+# Install package.xml
+install(FILES package.xml
+  DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}
+)
+setup_project_finalize()
