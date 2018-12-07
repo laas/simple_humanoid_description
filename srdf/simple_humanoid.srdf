@@ -44,6 +44,43 @@
   </group>
   -->
 
+  <group name="mapURDFToOpenHRP">
+    <joint name="RLEG_HIP_R"/>
+    <joint name="RLEG_HIP_P"      />
+    <joint name="RLEG_HIP_Y"      />
+    <joint name="RLEG_KNEE"       />
+    <joint name="RLEG_ANKLE_P"    />
+    <joint name="RLEG_ANKLE_R"    />
+    
+    <joint name="LLEG_HIP_R"      />
+    <joint name="LLEG_HIP_P"      />
+    <joint name="LLEG_HIP_Y"      />
+    <joint name="LLEG_KNEE"       />
+    <joint name="LLEG_ANKLE_P"    />
+    <joint name="LLEG_ANKLE_R"    />
+
+    <joint name="WAIST_P"         />
+    <joint name="WAIST_R"         />
+    <joint name="CHEST"           />
+
+    <joint name="RARM_SHOULDER_P" />
+    <joint name="RARM_SHOULDER_R" />
+    <joint name="RARM_SHOULDER_Y" />
+    <joint name="RARM_ELBOW"      />
+    <joint name="RARM_WRIST_Y"    />
+    <joint name="RARM_WRIST_P"    />
+    <joint name="RARM_WRIST_R"    />
+
+    <joint name="LARM_SHOULDER_P" />
+    <joint name="LARM_SHOULDER_R" />
+    <joint name="LARM_SHOULDER_Y" />
+    <joint name="LARM_ELBOW"      />
+    <joint name="LARM_WRIST_Y"    />
+    <joint name="LARM_WRIST_P"    />
+    <joint name="LARM_WRIST_R"    />
+    
+  </group>
+  
   <!-- end effector -->
   <!-- To remove when the grippers will be added
   <end_effector name="r_arm" parent_link="r_gripper" group="r_arm"/>
