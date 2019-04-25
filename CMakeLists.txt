@@ -12,12 +12,14 @@ setup_project()
 # Install generated urdf files
 install(FILES
   ${CMAKE_SOURCE_DIR}/urdf/simple_humanoid.urdf
+  ${CMAKE_SOURCE_DIR}/urdf/simple_humanoid_classical.urdf
   DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/urdf
 )
 
 # Install srdf files
 install(FILES
   ${CMAKE_SOURCE_DIR}/srdf/simple_humanoid.srdf
+  ${CMAKE_SOURCE_DIR}/srdf/simple_humanoid_classical.srdf  
   DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/srdf
 )
 

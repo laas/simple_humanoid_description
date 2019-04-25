@@ -4,7 +4,7 @@
 
    FIXME: fill missing data: sole, gripper and sensors
   -->
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="simple_humanoid">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="simple_humanoid_classical">
   <link name="base_link"/>
 
   <!-- VRML link name="WAIST_LINK0" -->
@@ -263,32 +263,32 @@
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
-  <joint name="RLEG_HIP_R" type="revolute">
+  <joint name="RLEG_HIP_Y" type="revolute">
     <origin xyz="0 -0.09 0" rpy="0 0 0"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="0 0 1"/>
     <parent link="BODY"/>
     <child link="RLEG_LINK1"/>
     <limit effort="100" lower="-0.349065850399" upper="1.57079632679" velocity="3.87" />
   </joint>
 
-  <joint name="RLEG_HIP_P" type="revolute">
+  <joint name="RLEG_HIP_R" type="revolute">
     <origin xyz="0 0 0" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="1 0 0"/>
     <parent link="RLEG_LINK1"/>
     <child link="RLEG_LINK2"/>
     <limit  effort="160" lower="-0.5236" upper="0.5236" velocity="5.8"/>
   </joint>
 
-  <joint name="RLEG_HIP_Y" type="revolute">
-    <origin xyz="0 0 -0.3535" rpy="0 0 0"/>
-    <axis xyz="0 0 1"/>
+  <joint name="RLEG_HIP_P" type="revolute">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
     <parent link="RLEG_LINK2"/>
     <child link="RLEG_LINK3"/>
     <limit effort="160" lower="-2.095" upper="0.7" velocity="5.8"/>
   </joint>
 
   <joint name="RLEG_KNEE" type="revolute">
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 -0.3535" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <parent link="RLEG_LINK3"/>
     <child link="RLEG_LINK4"/>
@@ -367,32 +367,32 @@
     <limit effort="8.0" lower="-0.680678408278" upper="0.680678408278" velocity="1.76"/>    
   </joint>
 
-  <joint name="LLEG_HIP_R" type="revolute">
+  <joint name="LLEG_HIP_Y" type="revolute">
     <origin xyz="0 0.09 0" rpy="0 0 0"/>
-    <axis xyz="1 0 0"/>
+    <axis xyz="0 0 1"/>
     <parent link="BODY"/>
     <child link="LLEG_LINK1"/>
     <limit effort="100" lower="-0.349065850399" upper="1.57079632679" velocity="3.87"/>    
   </joint>
 
-  <joint name="LLEG_HIP_P" type="revolute">
+  <joint name="LLEG_HIP_R" type="revolute">
     <origin xyz="0 0 0" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="1 0 0"/>
     <parent link="LLEG_LINK1"/>
     <child link="LLEG_LINK2"/>
     <limit effort="100" lower="-0.349065850399" upper="1.57079632679" velocity="3.87"/>        
   </joint>
 
-  <joint name="LLEG_HIP_Y" type="revolute">
-    <origin xyz="0 0 -0.3535" rpy="0 0 0"/>
-    <axis xyz="0 0 1"/>
+  <joint name="LLEG_HIP_P" type="revolute">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
     <parent link="LLEG_LINK2"/>
     <child link="LLEG_LINK3"/>
     <limit effort="160" lower="-0.5236" upper="0.5236" velocity="5.8"/>    
   </joint>
 
   <joint name="LLEG_KNEE" type="revolute">
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 -0.3535" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <parent link="LLEG_LINK3"/>
     <child link="LLEG_LINK4"/>
