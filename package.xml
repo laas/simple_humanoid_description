@@ -5,7 +5,9 @@
   <description>
     simple-humanoid URDF model and calibration data
   </description>
-  <maintainer email="antonio.el.khoury@laas.fr">Antonio El Khoury</maintainer>
+  <author>Maximilien Naveau</author>
+  <author>Olivier Stasse</author>
+  <maintainer email="guilhem.saurel@laas.fr">Guilhem Saurel</maintainer>
   <license>BSD-2-Clause</license>
-  <url>https://github.com/laas/simple_humanoid.git</url>
+  <url>https://github.com/laas/simple_humanoid</url>
 </package>
