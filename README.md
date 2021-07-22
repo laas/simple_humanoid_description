@@ -4,5 +4,23 @@
 [![Coverage report](https://gitlab.laas.fr/laas/simple_humanoid_description/badges/master/coverage.svg?job=doc-coverage)](http://projects.laas.fr/gepetto/doc/laas/simple_humanoid_description/master/coverage/)
 
 
-simple_humanoid_description contain urdf and srd files representing a simple humanoid robot
-These are the rigid body model of a simple humanoid robot.
+`simple_humanoid_description` provides URDF, SRDF model information
+for the simple_humnaoid robot.
+
+## URDF
+
+The URDF file is only available for the default model. It contains the
+kinematic model of the robot.
+No meshes are present inside this repository
+
+## SRDF
+
+The SRDF file is only available for the default model. It contains the
+collision pairs which can be safely disabled and the default robot
+configuration called "half_sitting".
+It also contains adiditonnal information like the position of the ankle in the
+foot frame and the size of the foot.
+
+## Code API
+
+This package does not provide API.
