@@ -1,30 +1,26 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.1)
 
-include(cmake/base.cmake)
-include(cmake/ros.cmake)
+# Project properties
+SET(PROJECT_ORG laas)
+SET(PROJECT_NAME simple_humanoid_description)
+set(PROJECT_DESCRIPTION "simple-humanoid URDF model and calibration data")
+SET(PROJECT_URL "http://github.com/${PROJECT_ORG}/${PROJECT_NAME}")
 
-set(PROJECT_NAME simple_humanoid_description)
-set(PROJECT_DESCRIPTION simple-humanoid URDF model and calibration data)
-set(PROJECT_URL "")
+# Project configuration
+SET(PROJECT_USE_CMAKE_EXPORT TRUE)
 
-setup_project()
+# JRL-cmakemodule setup
+INCLUDE(cmake/base.cmake)
 
-# Install generated urdf files
-install(FILES
-  ${CMAKE_SOURCE_DIR}/urdf/simple_humanoid.urdf
-  ${CMAKE_SOURCE_DIR}/urdf/simple_humanoid_classical.urdf
-  DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/urdf
-)
+# Project definition
+COMPUTE_PROJECT_ARGS(PROJECT_ARGS LANGUAGES CXX)
+PROJECT(${PROJECT_NAME} ${PROJECT_ARGS})
 
-# Install srdf files
-install(FILES
-  ${CMAKE_SOURCE_DIR}/srdf/simple_humanoid.srdf
-  ${CMAKE_SOURCE_DIR}/srdf/simple_humanoid_classical.srdf  
-  DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/srdf
-)
+ADD_LIBRARY(${PROJECT_NAME} INTERFACE)
+INSTALL(TARGETS ${PROJECT_NAME} EXPORT ${TARGETS_EXPORT_NAME} DESTINATION lib)
 
-# Install package.xml
-install(FILES package.xml
-  DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}
-)
-setup_project_finalize()
+FOREACH(dir urdf srdf launch)
+  INSTALL(DIRECTORY ${dir} DESTINATION share/${PROJECT_NAME})
+ENDFOREACH(dir)
+
+INSTALL(FILES package.xml DESTINATION share/${PROJECT_NAME})
