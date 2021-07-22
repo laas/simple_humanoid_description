@@ -6,6 +6,6 @@
     simple-humanoid URDF model and calibration data
   </description>
   <maintainer email="antonio.el.khoury@laas.fr">Antonio El Khoury</maintainer>
-  <license>closed source</license>
+  <license>BSD-2-Clause</license>
   <url>https://github.com/laas/simple_humanoid.git</url>
 </package>
