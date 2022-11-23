@@ -1,5 +1,5 @@
 <launch>
-  
+
   <param name="/robot_description" textfile="$(find simple_humanoid_description)/urdf/simple_humanoid.urdf" />
 
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_st_pub">

@@ -33,7 +33,7 @@
 	<box size="0.05 0.05 0.111"/>
       </geometry>
     </visual>
-    
+
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
@@ -49,7 +49,7 @@
       <mass value="6"/>
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
     </inertial>
-    
+
     <visual>
       <geometry>
         <cylinder length="0.05" radius="0.025"/>
@@ -91,36 +91,36 @@
       <mass value="13"/>
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
     </inertial>
-    
+
     <visual>
       <origin xyz="0 0 0" rpy="1.5708 0 0" />
       <geometry>
 	<cylinder length="0.1" radius="0.025" />
       </geometry>
-      <material name="WAIST_LINK3_APP"/>      
+      <material name="WAIST_LINK3_APP"/>
     </visual>
 
     <visual>
       <geometry>
 	<box size="0.15 0.27 0.05" />
       </geometry>
-      <material name="WAIST_LINK3_APP"/>      
+      <material name="WAIST_LINK3_APP"/>
     </visual>
 
     <visual>
-      <origin xyz="0 0 0.065" rpy="0 0 0" />      
+      <origin xyz="0 0 0.065" rpy="0 0 0" />
       <geometry>
 	<box size="0.05 0.05 0.03" />
       </geometry>
-      <material name="WAIST_LINK3_APP"/>      
+      <material name="WAIST_LINK3_APP"/>
     </visual>
 
     <visual>
-      <origin xyz="-0.015 0 0.16" rpy="0 0 0" />      
+      <origin xyz="-0.015 0 0.16" rpy="0 0 0" />
       <geometry>
 	<box size="0.31 0.16 0.16" />
       </geometry>
-      <material name="WAIST_LINK3_APP"/>      
+      <material name="WAIST_LINK3_APP"/>
     </visual>
 
   </link>
@@ -147,7 +147,7 @@
       <mass value="0.6"/>
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
     </inertial>
-    
+
     <visual>
       <origin xyz="0 0.0 0.0" rpy="0 0 1.5708" />
       <geometry>
@@ -191,9 +191,9 @@
       <geometry>
 	<cylinder length="0.05" radius="0.025" />
       </geometry>
-      <material name="WAIST_LINK3_APP"/>      
+      <material name="WAIST_LINK3_APP"/>
     </visual>
-    
+
     <visual>
       <origin xyz="0 0.0 -0.0985" rpy="0 0 0" />
       <geometry>
@@ -209,9 +209,9 @@
       <mass value="0.4"/>
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
     </inertial>
-    
+
     <visual>
-      <origin xyz="0 0 0.05" rpy="1.5708 0 0"/>      
+      <origin xyz="0 0 0.05" rpy="1.5708 0 0"/>
       <geometry>
 	<cylinder length="0.05" radius="0.025" />
       </geometry>
@@ -233,14 +233,14 @@
     </visual>
 
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 1.5708"/>      
+      <origin xyz="0 0 0" rpy="0 0 1.5708"/>
       <geometry>
 	<cylinder length="0.05" radius="0.025" />
       </geometry>
     </visual>
 
     <visual>
-      <origin xyz="0 0.03 -0.1125" rpy="0 0 0"/>      
+      <origin xyz="0 0.03 -0.1125" rpy="0 0 0"/>
       <geometry>
 	<box size="0.05 0.03 0.175" />
       </geometry>
@@ -257,7 +257,7 @@
     </inertial>
 
     <visual>
-      <origin xyz="0 -0.03 -0.1" rpy="0 0 0"/>      
+      <origin xyz="0 -0.03 -0.1" rpy="0 0 0"/>
       <geometry>
 	<box size="0.05 0.03 0.15" />
       </geometry>
@@ -361,7 +361,7 @@
     </inertial>
 
     <visual>
-      <origin rpy="0 0.0 0" xyz="0 0 0.22675"/>      
+      <origin rpy="0 0.0 0" xyz="0 0 0.22675"/>
       <geometry>
 	<box size="0.1 0.1 0.1535" />
       </geometry>
@@ -384,7 +384,7 @@
     </inertial>
 
     <visual>
-      <origin rpy="1.5708 0  0.0" xyz="0 0 0"/>      
+      <origin rpy="1.5708 0  0.0" xyz="0 0 0"/>
       <geometry>
 	<cylinder radius="0.05" length="0.1" />
       </geometry>
@@ -428,14 +428,14 @@
 	<box size="0.25 0.14 0.02"/>
       </geometry>
     </visual>
-    
+
     <visual>
       <origin rpy="0.0 1.5708 0.0 " xyz="0.1 0 0.0"/>
       <geometry>
         <cylinder length="0.1" radius="0.05"/>
       </geometry>
      </visual>
-    
+
   </link>
 
   <link name="RLEG_LINK1">
@@ -444,7 +444,7 @@
       <mass value="2.5"/>
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
     </inertial>
-    
+
     <visual>
       <origin rpy="0 0 1.57075" xyz="0 0 0"/>
       <geometry>
@@ -460,7 +460,7 @@
       <mass value="2"/>
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
     </inertial>
-    
+
     <visual>
       <origin rpy="0 0 1.57075" xyz="0 0 0"/>
       <geometry>
@@ -478,7 +478,7 @@
     </inertial>
 
     <visual>
-      <origin rpy="0 0.0 0" xyz="0 0 0.22675"/>      
+      <origin rpy="0 0.0 0" xyz="0 0 0.22675"/>
       <geometry>
 	<box size="0.1 0.1 0.1535" />
       </geometry>
@@ -490,7 +490,7 @@
 	<cylinder radius="0.05" length="0.1" />
       </geometry>
     </visual>
-    
+
   </link>
 
   <link name="RLEG_LINK4">
@@ -501,7 +501,7 @@
     </inertial>
 
     <visual>
-      <origin rpy="1.5708 0  0.0" xyz="0 0 0"/>            
+      <origin rpy="1.5708 0  0.0" xyz="0 0 0"/>
       <geometry>
 	<cylinder radius="0.05" length="0.1" />
       </geometry>
@@ -552,7 +552,7 @@
         <cylinder length="0.1" radius="0.05"/>
       </geometry>
      </visual>
-     
+
   </link>
 
 
@@ -594,7 +594,7 @@
     <axis xyz="0 1 0"/>
     <parent link="RLEG_LINK3"/>
     <child link="RLEG_LINK4"/>
-    <limit effort="300" lower="0" upper="2.618" velocity="7"/>    
+    <limit effort="300" lower="0" upper="2.618" velocity="7"/>
   </joint>
 
   <joint name="RLEG_ANKLE_P" type="revolute">
@@ -610,7 +610,7 @@
     <axis xyz="1 0 0"/>
     <parent link="RLEG_LINK5"/>
     <child link="r_ankle"/>
-    <limit effort="160" lower="-1.27" upper="0.68" velocity="5.8"/>    
+    <limit effort="160" lower="-1.27" upper="0.68" velocity="5.8"/>
   </joint>
 
   <joint name="RARM_SHOULDER_P" type="revolute">
@@ -618,7 +618,7 @@
     <axis xyz="0 1 0"/>
     <parent link="torso"/>
     <child link="RARM_LINK1"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.785398163397" velocity="2.7"/>        
+    <limit effort="100.0" lower="-1.57079632679" upper="0.785398163397" velocity="2.7"/>
   </joint>
 
   <joint name="RARM_SHOULDER_R" type="revolute">
@@ -634,7 +634,7 @@
     <axis xyz="0 0 1"/>
     <parent link="RARM_LINK2"/>
     <child link="RARM_LINK3"/>
-    <limit effort="70.0" lower="-2.42600766027" upper="2.42600766027" velocity="4.58"/>    
+    <limit effort="70.0" lower="-2.42600766027" upper="2.42600766027" velocity="4.58"/>
   </joint>
 
   <joint name="RARM_ELBOW" type="revolute">
@@ -642,7 +642,7 @@
     <axis xyz="0 1 0"/>
     <parent link="RARM_LINK3"/>
     <child link="RARM_LINK4"/>
-    <limit effort="70.0" lower="-2.23402144255" upper="0.00349065850399" velocity="4.58"/>  
+    <limit effort="70.0" lower="-2.23402144255" upper="0.00349065850399" velocity="4.58"/>
   </joint>
 
   <joint name="RARM_WRIST_Y" type="revolute">
@@ -658,7 +658,7 @@
     <axis xyz="0 1 0"/>
     <parent link="RARM_LINK5"/>
     <child link="RARM_LINK6"/>
-    <limit effort="8.0" lower="-1.37008346282" upper="1.37008346282" velocity="1.76"/>    
+    <limit effort="8.0" lower="-1.37008346282" upper="1.37008346282" velocity="1.76"/>
   </joint>
 
   <joint name="RARM_WRIST_R" type="revolute">
@@ -666,7 +666,7 @@
     <axis xyz="1 0 0"/>
     <parent link="RARM_LINK6"/>
     <child link="r_wrist"/>
-    <limit effort="8.0" lower="-0.680678408278" upper="0.680678408278" velocity="1.76"/>    
+    <limit effort="8.0" lower="-0.680678408278" upper="0.680678408278" velocity="1.76"/>
   </joint>
 
   <joint name="LLEG_HIP_R" type="revolute">
@@ -674,7 +674,7 @@
     <axis xyz="1 0 0"/>
     <parent link="BODY"/>
     <child link="LLEG_LINK1"/>
-    <limit effort="100" lower="-0.349065850399" upper="1.57079632679" velocity="3.87"/>    
+    <limit effort="100" lower="-0.349065850399" upper="1.57079632679" velocity="3.87"/>
   </joint>
 
   <joint name="LLEG_HIP_P" type="revolute">
@@ -682,7 +682,7 @@
     <axis xyz="0 1 0"/>
     <parent link="LLEG_LINK1"/>
     <child link="LLEG_LINK2"/>
-    <limit effort="100" lower="-0.349065850399" upper="1.57079632679" velocity="3.87"/>        
+    <limit effort="100" lower="-0.349065850399" upper="1.57079632679" velocity="3.87"/>
   </joint>
 
   <joint name="LLEG_HIP_Y" type="revolute">
@@ -690,7 +690,7 @@
     <axis xyz="0 0 1"/>
     <parent link="LLEG_LINK2"/>
     <child link="LLEG_LINK3"/>
-    <limit effort="160" lower="-0.5236" upper="0.5236" velocity="5.8"/>    
+    <limit effort="160" lower="-0.5236" upper="0.5236" velocity="5.8"/>
   </joint>
 
   <joint name="LLEG_KNEE" type="revolute">
@@ -698,7 +698,7 @@
     <axis xyz="0 1 0"/>
     <parent link="LLEG_LINK3"/>
     <child link="LLEG_LINK4"/>
-    <limit effort="160" lower="-2.095" upper="0.7" velocity="5.8"/>    
+    <limit effort="160" lower="-2.095" upper="0.7" velocity="5.8"/>
   </joint>
 
   <joint name="LLEG_ANKLE_P" type="revolute">
@@ -706,7 +706,7 @@
     <axis xyz="0 1 0"/>
     <parent link="LLEG_LINK4"/>
     <child link="LLEG_LINK5"/>
-    <limit effort="300" lower="0" upper="2.618" velocity="7"/>    
+    <limit effort="300" lower="0" upper="2.618" velocity="7"/>
   </joint>
 
   <joint name="LLEG_ANKLE_R" type="revolute">
@@ -714,7 +714,7 @@
     <axis xyz="1 0 0"/>
     <parent link="LLEG_LINK5"/>
     <child link="l_ankle"/>
-    <limit effort="160" lower="-1.27" upper="0.68" velocity="5.8"/>    
+    <limit effort="160" lower="-1.27" upper="0.68" velocity="5.8"/>
   </joint>
 
   <joint name="LARM_SHOULDER_P" type="revolute">
@@ -722,7 +722,7 @@
     <axis xyz="0 1 0"/>
     <parent link="torso"/>
     <child link="LARM_LINK1"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.785398163397" velocity="2.7"/>    
+    <limit effort="100.0" lower="-1.57079632679" upper="0.785398163397" velocity="2.7"/>
   </joint>
 
   <joint name="LARM_SHOULDER_R" type="revolute">
@@ -738,7 +738,7 @@
     <axis xyz="0 0 1"/>
     <parent link="LARM_LINK2"/>
     <child link="LARM_LINK3"/>
-    <limit effort="100.0" lower="-1.57079632679" upper="0.785398163397" velocity="2.7"/>                
+    <limit effort="100.0" lower="-1.57079632679" upper="0.785398163397" velocity="2.7"/>
   </joint>
 
   <joint name="LARM_ELBOW" type="revolute">
@@ -754,7 +754,7 @@
     <axis xyz="0 0 1"/>
     <parent link="LARM_LINK4"/>
     <child link="LARM_LINK5"/>
-    <limit effort="70.0" lower="-2.23402144255" upper="0.00349065850399" velocity="4.58"/>    
+    <limit effort="70.0" lower="-2.23402144255" upper="0.00349065850399" velocity="4.58"/>
   </joint>
 
   <joint name="LARM_WRIST_P" type="revolute">
